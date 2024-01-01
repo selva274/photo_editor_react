@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+body{
+  font-family:'Times New Roman', Times, serif ;
+  background: linear-gradient(white,gray)
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background:linear-gradient(white,gray);
+}
+.nav h1{
+ 
+}
+.nav input{
+  height: 20px;
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+}
+.content{
   flex-direction: column;
+  display: flex;
+  
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.image_wrapper{
+  height: 70vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   border: 2px solid black;
+   margin: 20px;
+   box-shadow: 3px 5px 40px 10px ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image_wrapper .image{
+  border: 5px solid rgb(70, 61, 61);
+  height: 40vh;
+  width: 40vw;
+}
+.image_wrapper .image img{
+  height: 40vh;
+  width: 40vw;
+}
+.ranges{
+      display: inline;
+      margin-top: 30px;
+}
+.ranges .mode{
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+.ranges .mode input{
+  margin-left: 20px;
+}
+.ranges .mode label{
+  font-size: 20px;
+  font-weight: 800;
 }
